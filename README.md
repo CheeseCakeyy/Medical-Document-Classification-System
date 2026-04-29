@@ -11,7 +11,6 @@ medical_doc_classifier/
 ├── main.py                   # GUI application (PySide6)
 ├── backend.py                # OCR, model inference, file sorting logic
 ├── requirements.txt          # Python dependencies
-├── generate_dummy_model.py   # Helper: creates test model.pkl / vectorizer.pkl
 │
 ├── model.pkl                 # ← Your trained scikit-learn model (place here)
 ├── vectorizer.pkl            # ← Your trained TF-IDF vectorizer (place here)
@@ -106,17 +105,6 @@ Both must be saved with `pickle`. The model must:
   `prescription`, `lab_report`, `discharge_summary`,
   `medical_bill`, `insurance_claim`, `referral_letter`, `other`
 
-### Option B — Generate dummy test models (development/testing)
-
-If you want to test the UI before integrating your real model:
-
-```bash
-python generate_dummy_model.py
-```
-
-This creates minimal `model.pkl` and `vectorizer.pkl` for UI testing only.
-
----
 
 ## Running the Application
 
