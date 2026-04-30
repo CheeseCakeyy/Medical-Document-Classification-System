@@ -93,8 +93,7 @@ pip install -r requirements.txt
 
 Place your trained files directly in the project folder:
 ```
-model.pkl        ← your scikit-learn classifier
-vectorizer.pkl   ← your TF-IDF vectorizer
+model.pkl        ← scikit-learn classifier
 ```
 
 Both must be saved with `pickle`. The model must:
@@ -137,7 +136,7 @@ OCREngine.extract_text()
        │
        ▼
 ModelManager.predict(text)
-  ├── vectorizer.transform(text)   ← TF-IDF features
+  ├── vectorizer.transform(text)   ← TF-IDF features  #included in the model pipeline 
   └── model.predict(features)      ← category label
        │
        ▼
