@@ -13,7 +13,6 @@ medical_doc_classifier/
 ├── requirements.txt          # Python dependencies
 │
 ├── model.pkl                 # ← Your trained scikit-learn model (place here)
-├── vectorizer.pkl            # ← Your trained TF-IDF vectorizer (place here)
 │
 └── classified_documents/     # Auto-created; sorted output folder
     ├── prescription/
