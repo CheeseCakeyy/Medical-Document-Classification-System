@@ -12,7 +12,7 @@ medical_doc_classifier/
 ├── backend.py                # OCR, model inference, file sorting logic
 ├── requirements.txt          # Python dependencies
 │
-├── model.pkl                 # ← Your trained scikit-learn model (place here)
+├── model.pkl                 # Trained scikit-learn model
 │
 └── classified_documents/     # Auto-created; sorted output folder
     ├── prescription/
